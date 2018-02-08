@@ -1,0 +1,19 @@
+C:\AnkushBookMyTable\BookMyTable\BookMyTableEntities\bin\Debug\BookMyTableEntities.dll
+C:\AnkushBookMyTable\BookMyTable\BookMyTableEntities\bin\Debug\BookMyTableEntities.pdb
+C:\AnkushBookMyTable\BookMyTable\BookMyTableEntities\obj\Debug\BookMyTableEntities.dll
+C:\AnkushBookMyTable\BookMyTable\BookMyTableEntities\obj\Debug\BookMyTableEntities.pdb
+C:\AnkushBookMyTable\BookMyTable\BookMyTableEntities\obj\Debug\BookMyTableEntities.csprojResolveAssemblyReference.cache
+D:\AnkushWork\Github\WebAapplication\BookMyTableEntities\bin\Debug\BookMyTableEntities.dll
+D:\AnkushWork\Github\WebAapplication\BookMyTableEntities\bin\Debug\BookMyTableEntities.pdb
+D:\AnkushWork\Github\WebAapplication\BookMyTableEntities\obj\Debug\BookMyTableEntities.dll
+D:\AnkushWork\Github\WebAapplication\BookMyTableEntities\obj\Debug\BookMyTableEntities.pdb
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableEntities\bin\Debug\BookMyTableEntities.dll
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableEntities\bin\Debug\BookMyTableEntities.pdb
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableEntities\obj\Debug\BookMyTableEntities.csprojResolveAssemblyReference.cache
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableEntities\obj\Debug\BookMyTableEntities.dll
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableEntities\obj\Debug\BookMyTableEntities.pdb
+D:\Officials\Projects\BookMyTable\app\BookMyTableEntities\bin\Debug\BookMyTableEntities.dll
+D:\Officials\Projects\BookMyTable\app\BookMyTableEntities\bin\Debug\BookMyTableEntities.pdb
+D:\Officials\Projects\BookMyTable\app\BookMyTableEntities\obj\Debug\BookMyTableEntities.dll
+D:\Officials\Projects\BookMyTable\app\BookMyTableEntities\obj\Debug\BookMyTableEntities.pdb
+D:\Officials\Projects\BookMyTable\app\BookMyTableEntities\obj\Debug\BookMyTableEntities.csprojResolveAssemblyReference.cache

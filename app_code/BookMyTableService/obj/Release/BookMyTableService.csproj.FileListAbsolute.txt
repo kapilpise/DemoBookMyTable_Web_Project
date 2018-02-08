@@ -1,0 +1,4 @@
+D:\AnkushWork\Github\WebAapplication\BookMyTableService\bin\Release\BookMyTableService.dll
+D:\AnkushWork\Github\WebAapplication\BookMyTableService\bin\Release\BookMyTableService.pdb
+D:\AnkushWork\Github\WebAapplication\BookMyTableService\obj\Release\BookMyTableService.dll
+D:\AnkushWork\Github\WebAapplication\BookMyTableService\obj\Release\BookMyTableService.pdb

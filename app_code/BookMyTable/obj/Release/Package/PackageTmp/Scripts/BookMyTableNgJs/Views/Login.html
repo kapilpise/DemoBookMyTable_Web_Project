@@ -1,0 +1,61 @@
+﻿<div class="login-wrapper">
+    <div class="back-link">
+        <!--<a href="index.html" class="btn btn-success">Back to Dashboard</a>-->
+    </div>
+    <div class="container-center">
+        <div class="panel-logo">
+            <h2>Manager Login</h2>
+           <!-- <img src="../../../../Content/assets/img/logo_final.png" style="width:100px;">-->
+            <!--<img src="../../../../../Content/assets/img/logo_final.png">-->
+        </div>
+        <div class="panel panel-bd">
+            <div class="panel-heading">
+                <div class="view-header">
+                    <div class="header-icon">
+                        
+                    </div>
+                    <div class="header-title">
+                        <h3>Login</h3>
+                        <small><strong>Please enter your credentials to login.</strong></small>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body">
+                <form name="loginform" novalidate>
+                    <div class="form-group">
+                        <!--<div ng-show="loginform.loginusername.$touched && loginform.loginusername.$error.required" class="errorMessage">
+                            You must enter a first name
+                        </div>-->
+                        <label class="control-label" for="username">Username</label>
+                        <!--<input type="text" mdInput  placeholder="UserName"  class="form-control"
+                                ng-model="loginData.userName" required id="loginusername" name="loginusername">-->
+                       
+                        <input type="text" name="name" ng-model='loginData.userName' ng-required="!disabled" ng-disabled="" 
+                              placeholder="Username" class="form-control" ng-class="" />
+                        <p ng-show="" style="color:red">Username is required</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="password">Password</label>
+
+                        <input type="password" name="password" placeholder="Password"  
+                               class="form-control" ng-model="loginData.password" ng-required="!disabled" ng-disabled="" 
+                               ng-class="">
+                        <p ng-show="" style="color:red">Password is required</p>
+                    </div>
+                    <div class="my-container">
+                        <!--<button class="btn btn-primary" type="submit" ng-disabled="!loginform.$valid" ng-click="loginform.$valid && login()">Login</button>-->
+                        <button class="btn btn-primary" type="submit" ng-click="login(loginData.userName, loginData.password)" >Login</button>
+                        <!-- <p *ngIf="httpCall"> please wait...</p> -->
+
+
+                       <!-- <ngx-loading [show]="httpCall" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>-->
+
+                    </div>
+                </form>
+            </div>
+           <!-- <button class="btn btn-default" ui-sref="landing.ForgotPassword">forgot password</button>--> 
+            
+        </div>
+    </div>
+</div>
+

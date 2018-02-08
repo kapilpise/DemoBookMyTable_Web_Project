@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bookmytableModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CustomerTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="EmailID" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="ts" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="OrderPaymentDetails" Relationship="Self.FK__OrderPaym__Custo__440B1D61" FromRole="CustomerTable" ToRole="OrderPaymentDetails" />
+    <Property Name="IsDeleted" Type="Int32" />
+  </EntityType>
+  <EntityType Name="HotelDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HotelName" Type="String" MaxLength="550" FixedLength="false" Unicode="false" />
+    <Property Name="ContactPersoneName" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Rating" Type="Int32" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="EmailID" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="OpenintHours" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="HotelType" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ts" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="HotelDiningDetails" Relationship="Self.FK__HotelDini__Hotel__76969D2E" FromRole="HotelDetails" ToRole="HotelDiningDetails" />
+  </EntityType>
+  <EntityType Name="HotelDiningDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HotelId" Type="Int32" />
+    <Property Name="TotalTable" Type="Int32" />
+    <Property Name="TableCapacity" Type="Int32" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="ts" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="TableAvailable" Type="Int32" />
+    <Property Name="IsBooked" Type="Boolean" />
+    <NavigationProperty Name="HotelDetail" Relationship="Self.FK__HotelDini__Hotel__76969D2E" FromRole="HotelDiningDetails" ToRole="HotelDetails" />
+  </EntityType>
+  <EntityType Name="HotelEmployeeDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HotelId" Type="Int32" />
+    <Property Name="EmployeeName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeeTypeID" Type="Int32" />
+    <Property Name="EmployeeRole" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="ts" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="HotelMenuTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HotelId" Type="Int32" />
+    <Property Name="DishName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="DishDescription" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Isveg" Type="Int32" />
+    <Property Name="IsAvaulable" Type="Int32" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Discount" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="ts" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="OrderMenuEntity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderId" Type="Int32" />
+    <Property Name="HotelId" Type="Int32" />
+    <Property Name="DishId" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="DishName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="DishAmount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="ts" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="OrderPaymentDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustOrderId" Type="Int32" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="PaymentTypeID" Type="Int32" />
+    <Property Name="TotalAmount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="ts" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="CustomerTable" Relationship="Self.FK__OrderPaym__Custo__440B1D61" FromRole="OrderPaymentDetails" ToRole="CustomerTable" />
+    <Property Name="IsDeleted" Type="Int32" />
+  </EntityType>
+  <EntityType Name="salesOrderTable">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HotelId" Type="Int32" />
+    <Property Name="TableId" Type="Int32" />
+    <Property Name="TotalQuantity" Type="Int32" />
+    <Property Name="IsApproveStatus" Type="Int32" />
+    <Property Name="ApprovalName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TotalAmount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="salesOrderItemTables" Relationship="Self.FK__salesOrde__Order__7F2BE32F" FromRole="salesOrderTable" ToRole="salesOrderItemTable" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="IsPayed" Type="Int32" />
+    <Property Name="IsDeleted" Type="Int32" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="RoleDesc" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="ts" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <Property Name="ts" Type="Binary" MaxLength="8" FixedLength="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="salesOrderItemTable">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="OrderID" />
+      <PropertyRef Name="MenuID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderID" Type="Int32" Nullable="false" />
+    <Property Name="MenuID" Type="Int32" Nullable="false" />
+    <Property Name="HotelId" Type="Int32" />
+    <Property Name="TableId" Type="Int32" />
+    <Property Name="TotalQuantity" Type="Int32" />
+    <Property Name="IsApproveStatus" Type="Int32" />
+    <Property Name="ApprovalName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TotalAmount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CreateDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="salesOrderTable" Relationship="Self.FK__salesOrde__Order__7F2BE32F" FromRole="salesOrderItemTable" ToRole="salesOrderTable" />
+    <Property Name="IsDeleted" Type="Int32" />
+  </EntityType>
+  <Association Name="FK__OrderPaym__Custo__440B1D61">
+    <End Role="CustomerTable" Type="Self.CustomerTable" Multiplicity="0..1" />
+    <End Role="OrderPaymentDetails" Type="Self.OrderPaymentDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerTable">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderPaymentDetails">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HotelDini__Hotel__76969D2E">
+    <End Role="HotelDetails" Type="Self.HotelDetail" Multiplicity="0..1" />
+    <End Role="HotelDiningDetails" Type="Self.HotelDiningDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HotelDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HotelDiningDetails">
+        <PropertyRef Name="HotelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__salesOrde__Order__7F2BE32F">
+    <End Role="salesOrderTable" Type="Self.salesOrderTable" Multiplicity="1" />
+    <End Role="salesOrderItemTable" Type="Self.salesOrderItemTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="salesOrderTable">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="salesOrderItemTable">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="bookmytableEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CustomerTables" EntityType="Self.CustomerTable" />
+    <EntitySet Name="HotelDetails" EntityType="Self.HotelDetail" />
+    <EntitySet Name="HotelDiningDetails" EntityType="Self.HotelDiningDetail" />
+    <EntitySet Name="HotelEmployeeDetails" EntityType="Self.HotelEmployeeDetail" />
+    <EntitySet Name="HotelMenuTables" EntityType="Self.HotelMenuTable" />
+    <EntitySet Name="OrderMenuEntities" EntityType="Self.OrderMenuEntity" />
+    <EntitySet Name="OrderPaymentDetails" EntityType="Self.OrderPaymentDetail" />
+    <EntitySet Name="salesOrderTables" EntityType="Self.salesOrderTable" />
+    <EntitySet Name="UserRoles" EntityType="Self.UserRole" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="salesOrderItemTables" EntityType="Self.salesOrderItemTable" />
+    <AssociationSet Name="FK__OrderPaym__Custo__440B1D61" Association="Self.FK__OrderPaym__Custo__440B1D61">
+      <End Role="CustomerTable" EntitySet="CustomerTables" />
+      <End Role="OrderPaymentDetails" EntitySet="OrderPaymentDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HotelDini__Hotel__76969D2E" Association="Self.FK__HotelDini__Hotel__76969D2E">
+      <End Role="HotelDetails" EntitySet="HotelDetails" />
+      <End Role="HotelDiningDetails" EntitySet="HotelDiningDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__salesOrde__Order__7F2BE32F" Association="Self.FK__salesOrde__Order__7F2BE32F">
+      <End Role="salesOrderTable" EntitySet="salesOrderTables" />
+      <End Role="salesOrderItemTable" EntitySet="salesOrderItemTables" />
+    </AssociationSet>
+    <FunctionImport Name="AddBookMyTableAndMenuOrder" ReturnType="Collection(bookmytableModel.AddBookMyTableAndMenuOrder_Result)">
+      <Parameter Name="p_intHotelId" Mode="In" Type="Int32" />
+      <Parameter Name="P_intTableBookingID" Mode="In" Type="Int32" />
+      <Parameter Name="P_intTotalQuantity" Mode="In" Type="Int32" />
+      <Parameter Name="P_dcmlTotalAmt" Mode="In" Type="Decimal" />
+      <Parameter Name="p_isPayed" Mode="In" Type="Int32" />
+      <Parameter Name="p_vchApprovalName" Mode="In" Type="String" />
+      <Parameter Name="p_vchCustomerName" Mode="In" Type="String" />
+      <Parameter Name="p_vchPhoneNumber" Mode="In" Type="String" />
+      <Parameter Name="p_vchEmailID" Mode="In" Type="String" />
+      <Parameter Name="p_vchCity" Mode="In" Type="String" />
+      <Parameter Name="p_vchCountry" Mode="In" Type="String" />
+      <Parameter Name="p_vchAddress" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="AddOrderMenuDetails">
+      <Parameter Name="p_intHotelId" Mode="In" Type="Int32" />
+      <Parameter Name="P_intDishID" Mode="In" Type="Int32" />
+      <Parameter Name="P_dcmlTotalAmt" Mode="In" Type="Decimal" />
+      <Parameter Name="p_OrderId" Mode="In" Type="Int32" />
+      <Parameter Name="P_intQuantity" Mode="In" Type="Int32" />
+      <Parameter Name="p_vchDishName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="AddsalesOrderItemTable">
+      <Parameter Name="p_intHotelId" Mode="In" Type="Int32" />
+      <Parameter Name="p_intMenuID" Mode="In" Type="Int32" />
+      <Parameter Name="P_intTableId" Mode="In" Type="Int32" />
+      <Parameter Name="P_dcmlTotalAmt" Mode="In" Type="Decimal" />
+      <Parameter Name="p_OrderId" Mode="In" Type="Int32" />
+      <Parameter Name="P_intQuantity" Mode="In" Type="Int32" />
+      <Parameter Name="p_vchDishName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="pSp_GetHotelDiningDetails" ReturnType="Collection(bookmytableModel.pSp_GetHotelDiningDetails_Result)">
+      <Parameter Name="HotelId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pSp_GetHotelMEnuDetails" ReturnType="Collection(bookmytableModel.pSp_GetHotelMEnuDetails_Result)">
+      <Parameter Name="HotelId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pSp_GetRestaurantsDetails" ReturnType="Collection(bookmytableModel.pSp_GetRestaurantsDetails_Result)">
+      <Parameter Name="Vch_IsActive" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_GetOrderDetails" ReturnType="Collection(bookmytableModel.Sp_GetOrderDetails_Result)">
+      <Parameter Name="OrderID" Mode="In" Type="Int32" />
+      <Parameter Name="vch_customerEmail" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_GetOrderDetailsToEmployee" ReturnType="Collection(bookmytableModel.Sp_GetOrderDetailsToEmployee_Result)">
+      <Parameter Name="EmployeeID" Mode="In" Type="Int32" />
+      <Parameter Name="RoleID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_GetUserAndUserRoleDetails">
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_GetEditOrderDetails" ReturnType="Collection(bookmytableModel.Sp_GetEditOrderDetails_Result)">
+      <Parameter Name="OrderID" Mode="In" Type="Int32" />
+      <Parameter Name="CustomerID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_GetOrderDetailsForWaiter" ReturnType="Collection(bookmytableModel.Sp_GetOrderDetailsForWaiter_Result)">
+      <Parameter Name="OrderID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="ExceptionLoggings" EntityType="bookmytableModel.ExceptionLogging" />
+  </EntityContainer>
+  <ComplexType Name="AddBookMyTableAndMenuOrder_Result">
+    <Property Type="Int32" Name="CustomerID" Nullable="true" />
+    <Property Type="Int32" Name="OrderID" Nullable="true" />
+    <Property Type="Int32" Name="OrderPaymentID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pSp_GetHotelDiningDetails_Result">
+    <Property Type="Int32" Name="DineID" Nullable="false" />
+    <Property Type="Int32" Name="HotelId" Nullable="true" />
+    <Property Type="Int32" Name="TotalTable" Nullable="true" />
+    <Property Type="Int32" Name="TableCapacity" Nullable="true" />
+    <Property Type="Int32" Name="TableAvailable" Nullable="true" />
+    <Property Type="Boolean" Name="IsBooked" Nullable="true" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="pSp_GetHotelMEnuDetails_Result">
+    <Property Type="Int32" Name="MenuID" Nullable="false" />
+    <Property Type="Int32" Name="HotelId" Nullable="true" />
+    <Property Type="String" Name="DishName" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="DishDescription" Nullable="true" MaxLength="250" />
+    <Property Type="Int32" Name="Isveg" Nullable="true" />
+    <Property Type="Int32" Name="IsAvailable" Nullable="true" />
+    <Property Type="Decimal" Name="Price" Nullable="true" Precision="19" />
+    <Property Type="String" Name="ImagePath" Nullable="true" MaxLength="500" />
+    <Property Type="Decimal" Name="Discount" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="pSp_GetRestaurantsDetails_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="HotelName" Nullable="true" MaxLength="550" />
+    <Property Type="String" Name="ContactPersoneName" Nullable="true" MaxLength="350" />
+    <Property Type="String" Name="Address" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="City" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="Country" Nullable="true" MaxLength="150" />
+    <Property Type="Int32" Name="Rating" Nullable="true" />
+    <Property Type="String" Name="PhoneNumber" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="EmailID" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="OpenintHours" Nullable="true" MaxLength="250" />
+    <Property Type="DateTime" Name="CreateDate" Nullable="false" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="Sp_GetOrderDetails_Result">
+    <Property Type="Int32" Name="hotelId" Nullable="true" />
+    <Property Type="Int32" Name="DishId" Nullable="false" />
+    <Property Type="Int32" Name="IsApproveStatus" Nullable="true" />
+    <Property Type="Int32" Name="OrderID" Nullable="false" />
+    <Property Type="Int32" Name="TableId" Nullable="true" />
+    <Property Type="Int32" Name="TotalQuantity" Nullable="true" />
+    <Property Type="String" Name="EmailID" Nullable="true" MaxLength="250" />
+    <Property Type="Int32" Name="CustomerId" Nullable="false" />
+    <Property Type="Decimal" Name="TotalAmount" Nullable="true" Precision="19" />
+  </ComplexType>
+  <ComplexType Name="Sp_GetOrderDetailsToEmployee_Result">
+    <Property Type="Int32" Name="HotelId" Nullable="true" />
+    <Property Type="Decimal" Name="TotalAmount" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="OrderId" Nullable="false" />
+    <Property Type="Int32" Name="TableID" Nullable="true" />
+    <Property Type="Int32" Name="IsApproveStatus" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="Sp_GetEditOrderDetails_Result">
+    <Property Type="Int32" Name="orderid" Nullable="false" />
+    <Property Type="Int32" Name="HotelId" Nullable="true" />
+    <Property Type="Decimal" Name="DishTotalAmount" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="IsVeg" Nullable="true" />
+    <Property Type="String" Name="DishName" Nullable="true" MaxLength="150" />
+    <Property Type="Decimal" Name="DishUnitPrice" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="tableid" Nullable="true" />
+    <Property Type="Int32" Name="Quantity" Nullable="true" />
+    <Property Type="Int32" Name="customerid" Nullable="false" />
+    <Property Type="String" Name="imagePath" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="DishDescription" Nullable="true" MaxLength="250" />
+    <Property Type="Int32" Name="DishId" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="Sp_GetOrderDetailsForWaiter_Result">
+    <Property Type="Int32" Name="orderid" Nullable="false" />
+    <Property Type="Int32" Name="HotelId" Nullable="true" />
+    <Property Type="Decimal" Name="DishTotalAmount" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="IsVeg" Nullable="true" />
+    <Property Type="String" Name="DishName" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="DishDescription" Nullable="true" MaxLength="250" />
+    <Property Type="Decimal" Name="DishUnitPrice" Nullable="true" Precision="19" />
+    <Property Type="Int32" Name="tableid" Nullable="true" />
+    <Property Type="Int32" Name="DishId" Nullable="false" />
+    <Property Type="Int32" Name="Quantity" Nullable="true" />
+    <Property Type="Int32" Name="customerid" Nullable="false" />
+    <Property Type="Int32" Name="IsApproveStatus" Nullable="true" />
+    <Property Type="String" Name="imagePath" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <EntityType Name="ExceptionLogging">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExceptionMsg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="InnerExceptionMsg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ExceptionType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ExceptionSource" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StackTrace" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StatusCode" Type="Int64" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+</Schema>

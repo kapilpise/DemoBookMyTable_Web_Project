@@ -1,0 +1,101 @@
+﻿<style>
+    .Active {
+        border: 2px solid #581212;
+    }
+    .center {
+        width: 120px;
+        margin: 40px auto;
+        float: right;
+    }
+</style>
+<div class="container">
+    <div class="left_100">
+        <div id="property-listings" class="left_100">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="float: left; font-family:Calibri">Menu</h1>
+                </div>
+            </div>
+            <form name="PlaceOrderform">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div>
+                            <span style="font-weight:600;font-size:18px; font-family:Calibri">Total Price   :${{TotalPrice | number : 2}} </span> <br />
+                            <span style="font-weight:600;font-size:18px; font-family:Calibri">Total Quantity   :{{Quantity}} </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" style="margin-left: 164px;">
+                        <input type="text" name="Name" ng-model='PlaceorderData.Name'
+                               placeholder="Full Name" class="form-control" style="display:inline-block;font-family:Calibri" required />
+                        <p ng-show="PlaceOrderform.Name.$touched && PlaceOrderform.Name.$error.required" style="color:red;font-family:Calibri">
+                            Required
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="text" name="EmailID" ng-model='PlaceorderData.EmailID' ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/"
+                               placeholder="Email Id" class="form-control" required style="display:inline-block; font-family:Calibri" />
+                        <p ng-show="PlaceOrderform.EmailID.$touched && PlaceOrderform.EmailID.$error.required" style="color:red;font-family:Calibri">
+                            Required
+                        </p>
+                        <p ng-show="PlaceOrderform.EmailID.$error.pattern" style="color:red;font-family:Calibri">
+                            Please Enter Valid Email
+                        </p>
+                    </div>
+                    <div class="col-sm-1" style="margin-top: -10px;margin-left:10px">
+                        <div class="left_100">
+                            <button class="btn btn-primary book-btn" style="font-family:Calibri" ng-click="BookMytableAndDish(PlaceOrderform.$valid)" ng-disabled="!PlaceOrderform.$valid">Book Order</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row" style="margin-top: 10px;">
+
+                <div class="col-sm-6" ng-repeat="mitem in HotelDetails">
+
+                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing" >
+                        <div class="media">
+                            <a target="_parent" href="#" class="pull-left">
+                                <img src="{{mitem.ImagePath}}" class="img-responsive" alt="image">
+                            </a>
+                            <div class="clearfix visible-sm"></div>
+                            <div class="media-body fnt-smaller" >
+                                <a target="_parent" href="#"></a>
+                                <h4 class="media-heading">
+                                    <a target="_parent" href="#">{{mitem.MenuName}}</a>
+                                    <div ng-if="mitem.quantity == 0" class="price"> $ {{mitem.Price}} </div>
+                                    <div ng-if="mitem.quantity > 0" class="price"> $ {{mitem.Price}}x{{mitem.quantity}} = {{mitem.Price*mitem.quantity  | number : 2}} </div>
+                                </h4>
+
+                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                    <li>{{mitem.MenuDescription}}</li>
+                                    <li style="list-style: none">|</li>
+                                    <li>Budget Friendly</li>
+                                </ul>
+                                <div class="left_100">
+                                   <!-- <button class="btn btn-primary book-btn" ng-click="BookOrderwithDish(mitem)">Add</button>-->
+                                    <div class="center">
+                                        <div class="input-group">
+                                            <input type="hidden" value="{{mitem.MenuID}}" />
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-danger btn-number" data-type="minus" ng-disabled="{{mitem.quantity < 0 }}" ng-click="decreaseQuantity(mitem)">
+                                                    <span class="glyphicon glyphicon-minus"></span>
+                                                </button>
+                                            </span>
+                                            <input type="text" ng-disabled="true" class="form-control input-number" value="{{mitem.quantity}}" min="0" max="100">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-success btn-number" data-type="plus" ng-click="increaseQuantity(mitem)">
+                                                    <span class="glyphicon glyphicon-plus"></span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End container -->
+    </div>
+</div>

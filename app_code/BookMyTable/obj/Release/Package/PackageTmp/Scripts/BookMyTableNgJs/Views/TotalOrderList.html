@@ -1,0 +1,78 @@
+﻿<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--<form name="SearchOrderform">
+    <div class="row">
+        <div class="col-sm-3">
+            <input type="text" name="OrderID" ng-model='SearchOrder.OrderID'
+                   placeholder="Order Id" class="form-control" style="display:inline-block;font-family:Calibri" required />
+            <p ng-show="SearchOrderform.OrderID.$touched && SearchOrderform.OrderID.$error.required" style="color:red;font-family:Calibri">
+                Required
+            </p>
+        </div>
+            <div class="col-sm-3">
+                <input type="text" name="EmailID" ng-model='SearchOrder.EmailID' ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/"
+                       placeholder="Email Id" class="form-control" required style="display:inline-block;font-family:Calibri" />
+                <p ng-show="SearchOrderform.EmailID.$touched && SearchOrderform.EmailID.$error.required" style="color:red;font-family:Calibri">
+                    Required
+                </p>
+                <p ng-show="SearchOrderform.EmailID.$error.pattern" style="color:red;font-family:Calibri">
+                    Please Enter Valid Email Id
+                </p>
+            </div>
+        <div class="col-sm-3">
+            <div class="left_100">
+                <button class="btn btn-primary book-btn" style="font-family:Calibri" ng-click="SearchMyOrder(SearchOrderform.$valid)" ng-disabled="!SearchOrderform.$valid">Search Order</button>
+            </div>
+        </div>
+    </div>
+</form>-->
+
+<!--<div >
+    <div class="col-sm-6">
+        <h2>OrderID: {{x.OrderID}}</h2>
+        <div class="panel panel-primary col-md-9" style="background-color:#f3d3d3">
+            <div class="col-md-6">
+                <div class="panel-body">TableId: {{x.TableID}}</div>
+                <div class="panel-body">Price: ${{x.TotalAmount}}</div>
+            </div>
+            <div>
+                <button ng-click="removeOrder(x.OrderID)" class="btn btn-danger" style="float: right;margin-top: 10px;">Cancel Order</button>
+                <button ng-click="editOrderbyManager(x.OrderID, x.OrderItemDetails[0].CustomerID)" class="btn btn-danger" style="float: right;margin-top: 10px;">Edit Order</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th style="width:15%">Order Id</th>
+            <th style="width:15%">Table ID</th>
+            <th style="width:15%">Total Amount</th>      
+            <th style="width:15%">Action</th>     
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-show="recordAvail">
+            <td>
+                No Record Available
+            </td>
+        </tr>
+        <tr ng-repeat="x in totalOrderList">
+            <td>
+               {{x.OrderID}}
+            </td>
+            <td>
+                {{x.TableID}}
+            </td>
+            <td>
+             ${{x.TotalAmount}}
+            </td>
+            <td>
+                <button ng-click="editOrderbyManager(x.OrderID, x.OrderItemDetails[0].CustomerID)" class="btn btn-danger" style="">Edit Order</button>
+                <button ng-click="CompleteOrder(x.OrderID, x.OrderItemDetails[0].CustomerID)" class="btn btn-danger" style="">Payment</button>
+            </td>
+        </tr>
+       
+    </tbody>
+</table>

@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "DishListingPage";
+}
+<div class="container">
+    <div class="left_100">
+        <div id="property-listings" class="left_100">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="float: left;">Available Items</h1>
+                    @*<div class="input-group search-bar-custom">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-addon">
+                                <span class="fa fa-search"></span>
+                            </span>
+                        </div>*@
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div>
+                        <span style="font-weight:600;font-size:20px">Total Price   :${{TotalPrice}} </span> <br />
+                        <span style="font-weight:600;font-size:20px">Total Quantity   :{{Quantity}} </span>
+                    </div>
+                   
+                </div>
+                <div class="col-sm-6">
+                    <div class="left_100">
+
+                        <button class="btn btn-primary book-btn" ng-click="BookMytableAndDish()">Book Order</button>
+                    </div>
+                </div>
+                </div>
+            <div class="row">
+
+                <div class="col-sm-6" ng-repeat="mitem in HotelDetails">
+
+                    <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
+                        <div class="media">
+                            <a target="_parent" href="#" class="pull-left">
+                                <img src="~/Content/images/biryani.jpg" class="img-responsive" alt="image">
+                            </a>
+                            <div class="clearfix visible-sm"></div>
+                            <div class="media-body fnt-smaller">
+                                <a target="_parent" href="#"></a>
+                                <h4 class="media-heading">
+                                    <a target="_parent" href="#">{{mitem.MenuName}}</a>
+                                    <div class="price"> INR {{mitem.Price}}/- </div>
+                                </h4>
+
+                                <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                    <li>{{mitem.MenuDescription}}</li>
+                                    <li style="list-style: none">|</li>
+                                    <li>Budget Friendly</li>
+                                </ul>
+                                <div class="left_100">
+                                    <button class="btn btn-primary book-btn" ng-click="BookOrderwithDish(mitem)">Add</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!-- End row -->
+        </div><!-- End container -->
+    </div>
+</div>

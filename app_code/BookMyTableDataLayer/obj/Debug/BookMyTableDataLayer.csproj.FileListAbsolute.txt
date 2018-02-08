@@ -1,0 +1,48 @@
+C:\AnkushBookMyTable\BookMyTable\BookMyTableDataLayer\bin\Debug\BookMyTableDataLayer.dll.config
+C:\AnkushBookMyTable\BookMyTable\BookMyTableDataLayer\bin\Debug\BookMyTableDataLayer.dll
+C:\AnkushBookMyTable\BookMyTable\BookMyTableDataLayer\bin\Debug\BookMyTableDataLayer.pdb
+C:\AnkushBookMyTable\BookMyTable\BookMyTableDataLayer\bin\Debug\BookMyTableEntities.dll
+C:\AnkushBookMyTable\BookMyTable\BookMyTableDataLayer\bin\Debug\EntityFramework.dll
+C:\AnkushBookMyTable\BookMyTable\BookMyTableDataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\AnkushBookMyTable\BookMyTable\BookMyTableDataLayer\bin\Debug\BookMyTableEntities.pdb
+C:\AnkushBookMyTable\BookMyTable\BookMyTableDataLayer\bin\Debug\EntityFramework.xml
+C:\AnkushBookMyTable\BookMyTable\BookMyTableDataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\AnkushBookMyTable\BookMyTable\BookMyTableDataLayer\obj\Debug\BookMyTableDataLayer.dll
+C:\AnkushBookMyTable\BookMyTable\BookMyTableDataLayer\obj\Debug\BookMyTableDataLayer.pdb
+C:\AnkushBookMyTable\BookMyTable\BookMyTableDataLayer\obj\Debug\BookMyTableDataLayer.csprojResolveAssemblyReference.cache
+D:\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\BookMyTableDataLayer.dll.config
+D:\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\BookMyTableDataLayer.dll
+D:\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\BookMyTableDataLayer.pdb
+D:\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\BookMyTableEntities.dll
+D:\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\EntityFramework.dll
+D:\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\BookMyTableEntities.pdb
+D:\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\EntityFramework.xml
+D:\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\obj\Debug\BookMyTableDataLayer.csprojResolveAssemblyReference.cache
+D:\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\obj\Debug\BookMyTableDataLayer.dll
+D:\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\obj\Debug\BookMyTableDataLayer.pdb
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\BookMyTableDataLayer.dll.config
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\BookMyTableDataLayer.dll
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\BookMyTableDataLayer.pdb
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\BookMyTableEntities.dll
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\EntityFramework.dll
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\BookMyTableEntities.pdb
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\EntityFramework.xml
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\obj\Debug\BookMyTableDataLayer.csprojResolveAssemblyReference.cache
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\obj\Debug\BookMyTableDataLayer.dll
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableDataLayer\obj\Debug\BookMyTableDataLayer.pdb
+D:\Officials\Projects\BookMyTable\app\BookMyTableDataLayer\bin\Debug\BookMyTableDataLayer.dll.config
+D:\Officials\Projects\BookMyTable\app\BookMyTableDataLayer\bin\Debug\BookMyTableDataLayer.dll
+D:\Officials\Projects\BookMyTable\app\BookMyTableDataLayer\bin\Debug\BookMyTableDataLayer.pdb
+D:\Officials\Projects\BookMyTable\app\BookMyTableDataLayer\bin\Debug\BookMyTableEntities.dll
+D:\Officials\Projects\BookMyTable\app\BookMyTableDataLayer\bin\Debug\EntityFramework.dll
+D:\Officials\Projects\BookMyTable\app\BookMyTableDataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Officials\Projects\BookMyTable\app\BookMyTableDataLayer\bin\Debug\BookMyTableEntities.pdb
+D:\Officials\Projects\BookMyTable\app\BookMyTableDataLayer\bin\Debug\EntityFramework.xml
+D:\Officials\Projects\BookMyTable\app\BookMyTableDataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Officials\Projects\BookMyTable\app\BookMyTableDataLayer\obj\Debug\BookMyTableDataLayer.csprojResolveAssemblyReference.cache
+D:\Officials\Projects\BookMyTable\app\BookMyTableDataLayer\obj\Debug\BookMyTableDataLayer.dll
+D:\Officials\Projects\BookMyTable\app\BookMyTableDataLayer\obj\Debug\BookMyTableDataLayer.pdb

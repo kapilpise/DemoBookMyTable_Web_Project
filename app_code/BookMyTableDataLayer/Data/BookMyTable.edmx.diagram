@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1034eeb018fb4302b45f70c6ccf8583e" Name="Diagram1" ZoomLevel="78">
+        <EntityTypeShape EntityType="bookmytableModel.CustomerTable" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookmytableModel.HotelDetail" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookmytableModel.HotelDiningDetail" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookmytableModel.HotelEmployeeDetail" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookmytableModel.HotelMenuTable" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookmytableModel.OrderMenuEntity" Width="1.5" PointX="5.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookmytableModel.OrderPaymentDetail" Width="1.5" PointX="8" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookmytableModel.salesOrderTable" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookmytableModel.UserRole" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookmytableModel.User" Width="1.5" PointX="9.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bookmytableModel.salesOrderItemTable" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="bookmytableModel.FK__OrderPaym__Custo__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="bookmytableModel.FK__HotelDini__Hotel__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="bookmytableModel.FK__salesOrde__Order__7F2BE32F" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="bookmytableModel.ExceptionLogging" Width="1.5" PointX="10.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

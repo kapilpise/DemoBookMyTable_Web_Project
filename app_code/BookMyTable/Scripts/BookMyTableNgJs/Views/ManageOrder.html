@@ -1,0 +1,36 @@
+﻿<form name="SearchOrderform">
+    <div class="row">
+        <div class="col-sm-3">
+            <input type="text" name="OrderID" ng-model='SearchOrder.OrderID'
+                   placeholder="Order Id" class="form-control" style="display:inline-block;font-family:Calibri" required />
+            <p ng-show="SearchOrderform.OrderID.$touched && SearchOrderform.OrderID.$error.required" style="color:red;font-family:Calibri">
+                Required
+            </p>
+        </div>
+    <!--</div>-->
+    <!--<br /></br>-->
+    <!--<div class="row">-->
+            <div class="col-sm-3">
+                <input type="text" name="EmailID" ng-model='SearchOrder.EmailID' ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/"
+                       placeholder="Email Id" class="form-control" required style="display:inline-block;font-family:Calibri" />
+                <p ng-show="SearchOrderform.EmailID.$touched && SearchOrderform.EmailID.$error.required" style="color:red;font-family:Calibri">
+                    Required
+                </p>
+                <p ng-show="SearchOrderform.EmailID.$error.pattern" style="color:red;font-family:Calibri">
+                    Please Enter Valid Email Id
+                </p>
+            </div>
+        <div class="col-sm-3">
+            <div class="left_100">
+                <button class="btn btn-primary book-btn" style="font-family:Calibri" ng-click="SearchMyOrder(SearchOrderform.$valid)" ng-disabled="!SearchOrderform.$valid">Search Order</button>
+            </div>
+        </div>
+    </div>
+    <!--<div class="row">
+        <div class="col-sm-3">
+            <div class="left_100">
+                <button class="btn btn-primary book-btn" style="font-family:Calibri" ng-click="SearchMyOrder(SearchOrderform.$valid)" ng-disabled="!SearchOrderform.$valid">Search Order</button>
+            </div>
+        </div>
+    </div>-->
+</form>

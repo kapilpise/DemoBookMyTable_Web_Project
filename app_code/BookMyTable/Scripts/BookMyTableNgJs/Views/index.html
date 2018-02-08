@@ -1,0 +1,103 @@
+﻿
+<style>
+    .activeIsbooked {
+        border: 1px solid blue !important;
+        box-shadow: 1px 1px 1px 1px rgba(228, 26, 26, 0.77) !important;
+    }
+
+</style>
+<div class="left_100">
+    <div id="property-listings" class="left_100">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="float: left;font-family:Calibri">Book My Table</h1>
+                <!--@*<div class="input-group search-bar-custom">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-addon">
+                        <span class="fa fa-search"></span>
+                    </span>
+                </div>*@-->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing" ng-repeat="item in records">
+                    <div class="media">
+                        <a target="_parent" href="#" class="pull-left">
+                            <img src="http://images.prd.mris.com/image/V2/1/Yu59d899Ocpyr_RnF0-8qNJX1oYibjwp9TiLy-bZvU9vRJ2iC1zSQgFwW-fTCs6tVkKrj99s7FFm5Ygwl88xIA.jpg" class="img-responsive" alt="image">
+                        </a>
+                        <div class="clearfix visible-sm"></div>
+                        <div class="media-body fnt-smaller">
+                            <a target="_parent" href="#"></a>
+                            <h4 class="media-heading">
+                                <a target="_parent" href="#">{{item.HotelName}} </a>
+                            </h4>
+
+                            <ul class="list-inline mrg-0 btm-mrg-10 clr-535353">
+                                <li>Opening Hrs : {{item.OpenintHours}}</li>
+
+                            </ul>
+                            <i class="fa fa-map-marker map-ico-address"></i>
+                            <p class="hidden-xs">
+                                {{item.Address}},{{item.City}},{{item.Country }}
+                            </p>
+                            <div class="left_100">
+                                <div class="star-rating-outer">
+                                    <div class="fa fa-star star-ico-custom"></div>
+                                    <div class="fa fa-star star-ico-custom"></div>
+                                    <div class="fa fa-star star-ico-custom"></div>
+                                    <div class="fa fa-star star-ico-custom"></div>
+                                    <div class="fa fa-star star-ico-custom"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6" ng-repeat="mtables in HotelTablesDetails">
+
+                <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing" ng-class="{'activeIsbooked':mtables.ISBooked}">
+                    <div class="media">
+                        <a target="_parent" href="#" class="pull-left">
+                            <img src="../../../Content/images/Tables/Table10.jpg" class="img-responsive" alt="image">
+                        </a>
+
+                        <div class="clearfix visible-sm"></div>
+                        <div class="media-body fnt-smaller">
+                            <a target="_parent" href="#"></a>
+                            <h4 class="media-heading">
+                                <div class="price" style="font-family:Calibri">  Seats : {{mtables.TableCapacity}} </div>
+                            </h4>
+
+                            <div class="left_100" style="margin-top: 67px;">
+                                <button class="btn btn-primary book-btn" ng-show="mtables.ISBooked" ng-disabled="mtables.ISBooked" style="font-family:Calibri">Booked</button>
+                                <button class="btn btn-primary book-btn" ng-hide="mtables.ISBooked" ng-disabled="mtables.ISBooked"  ng-click="BookOrderTable(mtables.Id)" style="font-family:Calibri">Select</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--@*<div class="col-sm-6">
+                <div ng-repeat="cartItem in MenuList">
+                    {{cartItem.MenuName}}
+                </div>
+                <div>
+                    Total Price    : {{TotalPrice}}
+                </div>
+                <div class="left_100">
+                    <button class="btn btn-primary book-btn" ng-click="BookMytableAndDish()">Book Order</button>
+                </div>
+            </div>*@-->
+
+        </div><!-- End row --><!-- End row -->
+    </div><!-- End container -->
+</div>

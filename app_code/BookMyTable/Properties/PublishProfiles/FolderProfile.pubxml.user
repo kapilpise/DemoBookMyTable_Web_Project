@@ -1,0 +1,650 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_NewBackgroundProfile>False</_NewBackgroundProfile>
+    <_PublishTargetUrl>C:\AnkushBookMyTable\PublishFolder</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/HelpPage.css">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Api.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/CollectionModelDescription.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ComplexTypeModelDescription.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/DictionaryModelDescription.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/EnumTypeModelDescription.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/HelpPageApiModel.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ImageSample.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/InvalidSample.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/KeyValuePairModelDescription.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ModelDescriptionLink.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Parameters.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Samples.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/SimpleTypeModelDescription.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/TextSample.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Index.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/ResourceModel.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Shared/_Layout.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Web.config">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/_ViewStart.cshtml">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/06/2018 15:29:30</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>02/06/2018 15:29:26</publishTime>
+    </File>
+    <File Include="bin/Autofac.dll">
+      <publishTime>02/06/2018 15:29:30</publishTime>
+    </File>
+    <File Include="bin/Autofac.Integration.Mvc.dll">
+      <publishTime>02/06/2018 15:29:30</publishTime>
+    </File>
+    <File Include="bin/Autofac.Integration.WebApi.dll">
+      <publishTime>02/06/2018 15:29:30</publishTime>
+    </File>
+    <File Include="bin/BookMyTable.dll">
+      <publishTime>02/08/2018 20:22:53</publishTime>
+    </File>
+    <File Include="bin/BookMyTableDataLayer.dll">
+      <publishTime>02/08/2018 20:21:20</publishTime>
+    </File>
+    <File Include="bin/BookMyTableDataLayer.dll.config">
+      <publishTime>02/05/2018 17:56:12</publishTime>
+    </File>
+    <File Include="bin/BookMyTableEntities.dll">
+      <publishTime>02/08/2018 20:21:20</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>02/06/2018 15:29:30</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>02/06/2018 15:29:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>02/06/2018 15:29:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/Swashbuckle.Core.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>02/06/2018 15:29:31</publishTime>
+    </File>
+    <File Include="bin/WebActivatorEx.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>02/06/2018 15:29:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="Content/custom.css">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="Content/images/biryani.jpg">
+      <publishTime>01/25/2018 12:19:58</publishTime>
+    </File>
+    <File Include="Content/images/Menues/biryani.jpg">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="Content/images/Menues/CHICKEN POPEYES.jpg">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="Content/images/Menues/CHICKEN QUESADILLA.jpg">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="Content/images/Menues/DOUBLE-DOUBLE.jpg">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="Content/images/Menues/TACO BELL.jpg">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="Content/images/Menues/WAFFLE FRIES.jpg">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="Content/images/Table1.jpg">
+      <publishTime>01/25/2018 15:16:21</publishTime>
+    </File>
+    <File Include="Content/images/Table10.jpg">
+      <publishTime>01/25/2018 20:36:34</publishTime>
+    </File>
+    <File Include="Content/images/Table2.jpg">
+      <publishTime>01/25/2018 20:51:54</publishTime>
+    </File>
+    <File Include="Content/images/Table4.jpg">
+      <publishTime>01/25/2018 20:31:55</publishTime>
+    </File>
+    <File Include="Content/images/Table8.jpg">
+      <publishTime>01/25/2018 20:30:38</publishTime>
+    </File>
+    <File Include="Content/images/Tables/Table10.jpg">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="Content/images/Tables/Table2.jpg">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="Content/images/Tables/Table4.jpg">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="Content/images/Tables/Table8.jpg">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="Content/universal.css">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/06/2018 15:29:27</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/angular-h-sweetalert/bower.json">
+      <publishTime>11/23/2017 12:23:30</publishTime>
+    </File>
+    <File Include="Scripts/angular-h-sweetalert/demo/demo.css">
+      <publishTime>11/23/2017 12:23:30</publishTime>
+    </File>
+    <File Include="Scripts/angular-h-sweetalert/demo/demo.js">
+      <publishTime>11/23/2017 12:23:30</publishTime>
+    </File>
+    <File Include="Scripts/angular-h-sweetalert/demo/img/cus_suc.png">
+      <publishTime>11/23/2017 12:23:30</publishTime>
+    </File>
+    <File Include="Scripts/angular-h-sweetalert/demo/index.html">
+      <publishTime>11/23/2017 12:23:30</publishTime>
+    </File>
+    <File Include="Scripts/angular-h-sweetalert/demo/libs/amazeui.min.css">
+      <publishTime>11/23/2017 12:23:30</publishTime>
+    </File>
+    <File Include="Scripts/angular-h-sweetalert/demo/libs/prism.css">
+      <publishTime>11/23/2017 12:23:30</publishTime>
+    </File>
+    <File Include="Scripts/angular-h-sweetalert/demo/libs/prism.js">
+      <publishTime>11/23/2017 12:23:30</publishTime>
+    </File>
+    <File Include="Scripts/angular-h-sweetalert/dist/ngSweetAlert.js">
+      <publishTime>11/23/2017 12:23:30</publishTime>
+    </File>
+    <File Include="Scripts/angular-h-sweetalert/dist/ngSweetAlert.min.js">
+      <publishTime>11/23/2017 12:23:30</publishTime>
+    </File>
+    <File Include="Scripts/angular-h-sweetalert/gulpfile.js">
+      <publishTime>11/23/2017 12:23:30</publishTime>
+    </File>
+    <File Include="Scripts/angular-h-sweetalert/LICENSE">
+      <publishTime>11/23/2017 12:23:30</publishTime>
+    </File>
+    <File Include="Scripts/angular-h-sweetalert/package.json">
+      <publishTime>11/23/2017 12:23:30</publishTime>
+    </File>
+    <File Include="Scripts/angular-h-sweetalert/README.md">
+      <publishTime>11/23/2017 12:23:30</publishTime>
+    </File>
+    <File Include="Scripts/angular-h-sweetalert/src/ngSweetAlert.js">
+      <publishTime>11/23/2017 12:23:30</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/BookMyTableController.js">
+      <publishTime>02/08/2018 20:11:31</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/DailyBusinessReportController.js">
+      <publishTime>02/08/2018 20:12:36</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/EditOrderController.js">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/HeaderController.js">
+      <publishTime>02/08/2018 15:16:34</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/LoginController.js">
+      <publishTime>02/08/2018 20:12:45</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/ManagerEditOrderController.js">
+      <publishTime>02/08/2018 20:13:05</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/ModuleApp.js">
+      <publishTime>02/08/2018 20:04:05</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/Views/DailyBusinessReport.html">
+      <publishTime>02/08/2018 17:11:48</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/Views/dishPage.html">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/Views/EditDishbyManagerPage.html">
+      <publishTime>02/07/2018 14:54:33</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/Views/EditDishPage.html">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/Views/Header.html">
+      <publishTime>02/08/2018 15:17:29</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/Views/index.html">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/Views/Login.html">
+      <publishTime>02/08/2018 14:53:01</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/Views/ManageOrder.html">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/Views/Success.html">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/BookMyTableNgJs/Views/TotalOrderList.html">
+      <publishTime>02/08/2018 20:03:02</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/js/custom.js">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/js/universal.js">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/bower.json">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dev/gulpfile-wrap-template.js">
+      <publishTime>11/23/2017 12:23:28</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dev/ie9.css">
+      <publishTime>11/23/2017 12:23:28</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dev/loader-animation.css">
+      <publishTime>11/23/2017 12:23:28</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dev/modules/default-params.js">
+      <publishTime>11/23/2017 12:23:28</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dev/modules/handle-click.js">
+      <publishTime>11/23/2017 12:23:28</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dev/modules/handle-dom.js">
+      <publishTime>11/23/2017 12:23:28</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dev/modules/handle-key.js">
+      <publishTime>11/23/2017 12:23:28</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dev/modules/handle-swal-dom.js">
+      <publishTime>11/23/2017 12:23:28</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dev/modules/injected-html.js">
+      <publishTime>11/23/2017 12:23:28</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dev/modules/set-params.js">
+      <publishTime>11/23/2017 12:23:28</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dev/modules/utils.js">
+      <publishTime>11/23/2017 12:23:28</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dev/sweetalert.es6.js">
+      <publishTime>11/23/2017 12:23:28</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dev/sweetalert.scss">
+      <publishTime>11/23/2017 12:23:28</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dist/sweetalert-dev.js">
+      <publishTime>11/23/2017 12:23:26</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dist/sweetalert.css">
+      <publishTime>11/23/2017 12:23:26</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/dist/sweetalert.min.js">
+      <publishTime>11/23/2017 12:23:26</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/example/example.css">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/example/example.scss">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/example/images/logo_big%402x.png">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/example/images/logo_big.png">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/example/images/logo_small%402x.png">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/example/images/logo_small.png">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/example/images/te-logo-small.svg">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/example/images/thumbs-up.jpg">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/example/images/vs_icon%402x.png">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/example/images/vs_icon.png">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/gulpfile.js">
+      <publishTime>11/23/2017 12:23:26</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/index.html">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/lib/modules/default-params.js">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/lib/modules/handle-click.js">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/lib/modules/handle-dom.js">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/lib/modules/handle-key.js">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/lib/modules/handle-swal-dom.js">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/lib/modules/injected-html.js">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/lib/modules/set-params.js">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/lib/modules/utils.js">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/lib/sweetalert.js">
+      <publishTime>11/23/2017 12:23:27</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/LICENSE">
+      <publishTime>11/23/2017 12:23:26</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/package.json">
+      <publishTime>11/23/2017 12:23:26</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/README.md">
+      <publishTime>11/23/2017 12:23:28</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/sweetalert.gif">
+      <publishTime>11/23/2017 12:23:26</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/test/index.html">
+      <publishTime>11/23/2017 12:23:26</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/test/tests.js">
+      <publishTime>11/23/2017 12:23:26</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/themes/facebook/facebook.css">
+      <publishTime>11/23/2017 12:23:26</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/themes/facebook/facebook.scss">
+      <publishTime>11/23/2017 12:23:26</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/themes/google/google.css">
+      <publishTime>11/23/2017 12:23:26</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/themes/google/google.scss">
+      <publishTime>11/23/2017 12:23:26</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/themes/twitter/twitter.css">
+      <publishTime>11/23/2017 12:23:26</publishTime>
+    </File>
+    <File Include="Scripts/sweetalert/themes/twitter/twitter.scss">
+      <publishTime>11/23/2017 12:23:26</publishTime>
+    </File>
+    <File Include="Views/Home/DishListingPage.cshtml">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Views/Login/Index.cshtml">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>02/08/2018 16:22:47</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>02/06/2018 15:29:29</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/06/2018 16:39:56</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

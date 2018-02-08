@@ -1,0 +1,19 @@
+C:\AnkushBookMyTable\BookMyTable\BookMyTableService\bin\Debug\BookMyTableService.dll
+C:\AnkushBookMyTable\BookMyTable\BookMyTableService\bin\Debug\BookMyTableService.pdb
+C:\AnkushBookMyTable\BookMyTable\BookMyTableService\obj\Debug\BookMyTableService.dll
+C:\AnkushBookMyTable\BookMyTable\BookMyTableService\obj\Debug\BookMyTableService.pdb
+C:\AnkushBookMyTable\BookMyTable\BookMyTableService\obj\Debug\BookMyTableService.csprojResolveAssemblyReference.cache
+D:\AnkushWork\Github\WebAapplication\BookMyTableService\bin\Debug\BookMyTableService.dll
+D:\AnkushWork\Github\WebAapplication\BookMyTableService\bin\Debug\BookMyTableService.pdb
+D:\AnkushWork\Github\WebAapplication\BookMyTableService\obj\Debug\BookMyTableService.dll
+D:\AnkushWork\Github\WebAapplication\BookMyTableService\obj\Debug\BookMyTableService.pdb
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableService\bin\Debug\BookMyTableService.dll
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableService\bin\Debug\BookMyTableService.pdb
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableService\obj\Debug\BookMyTableService.csprojResolveAssemblyReference.cache
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableService\obj\Debug\BookMyTableService.dll
+D:\Ankush P\AnkushWork\Github\WebAapplication\BookMyTableService\obj\Debug\BookMyTableService.pdb
+D:\Officials\Projects\BookMyTable\app\BookMyTableService\bin\Debug\BookMyTableService.dll
+D:\Officials\Projects\BookMyTable\app\BookMyTableService\bin\Debug\BookMyTableService.pdb
+D:\Officials\Projects\BookMyTable\app\BookMyTableService\obj\Debug\BookMyTableService.csprojResolveAssemblyReference.cache
+D:\Officials\Projects\BookMyTable\app\BookMyTableService\obj\Debug\BookMyTableService.dll
+D:\Officials\Projects\BookMyTable\app\BookMyTableService\obj\Debug\BookMyTableService.pdb
